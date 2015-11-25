@@ -1,0 +1,259 @@
+# Translation of Next Saturday in Azerbaijani
+# This file is distributed under the same license as the Next Saturday package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-06-02 15:30:12+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1000\n"
+"Project-Id-Version: Next Saturday\n"
+
+#: single.php:20
+msgid "Previous <span>Post</span>"
+msgstr "Öncəki <span>Yazı</span>"
+
+#: single.php:21
+msgid "Next <span>Post</span>"
+msgstr "Sonrakı <span>Yazı</span>"
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/next-saturday/style.css
+msgid "Add a touch of childlike innocence to your blog with Next Saturday, a bold and playful theme. Originally designed by Ian Mintz, Next Saturday features styling for muliple post formats, custom background and header support, and a right sidebar."
+msgstr ""
+
+#: sidebar.php:22
+msgid "Meta"
+msgstr "Meta"
+
+#: search.php:32
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Bağışlayın, axtarış kriteriyalarınıza uyğun gələn nəticə əldə edilmədi.Fərqli açar kəlmələrlə təkrar yoxlayın."
+
+#: search.php:12
+msgid "<p><span>Search Results for: \"%s\".</span></p>"
+msgstr "<p><span>üçün Axtarışın Nəticələri: \"%s\".</span></p>"
+
+#: search.php:27
+msgid "Nothing Found"
+msgstr "Tapılmadı"
+
+#: image.php:77
+msgid "Next Image"
+msgstr "Sonrakı təsvir"
+
+#: image.php:76
+msgid "Previous Image"
+msgstr "Öncəki təsvir"
+
+#: image.php:21
+msgid "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a>"
+msgstr "<span class=\"meta-prep meta-prep-entry-date\">Dərc edildiyi tarix  </span> <span class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a>"
+
+#: image.php:75
+msgid "Image navigation"
+msgstr "Rəsmlər üzrə naviqasiya"
+
+#: header.php:54
+msgid "RSS Feed"
+msgstr "RSS Qidalandırıcısı"
+
+#: header.php:36
+msgid "Skip to content"
+msgstr "Mühtəviyyata keç"
+
+#: functions.php:278
+msgid "Download: %1$s"
+msgstr "Endir: %1$s"
+
+#: functions.php:337
+msgid "Page %s"
+msgstr "Səhifə %s"
+
+#: functions.php:211
+msgid "Reply &darr;"
+msgstr "Cavabla &darr;"
+
+#: functions.php:202
+msgid "Your comment is awaiting moderation."
+msgstr "Şərhiniz yoxlama gözləyir."
+
+#. translators: 1: date, 2: time
+#: functions.php:193
+msgid "%1$s at %2$s"
+msgstr "%1$s tarixində, saat %2$s"
+
+#. translators: 1: comment author, 2: date and time
+#: functions.php:187
+msgid "%1$s on %2$s <span class=\"says\">said:</span>"
+msgstr "%1$s üzərində %2$s <span class=\"says\">dedi ki:</span>"
+
+#: functions.php:170
+msgid "Pingback:"
+msgstr "Geri bildiriş: "
+
+#: functions.php:151
+msgid "<span class=\"meta-nav\">&larr;</span> Older <span>posts</span>"
+msgstr "<span class=\"meta-nav\">&larr;</span> Əski <span>posts</span>"
+
+#: functions.php:152
+msgid "Newer <span>posts</span> <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Yeni <span>posts</span> <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:150 single.php:19
+msgid "Post navigation"
+msgstr "Yazı naviqasiyaları"
+
+#: functions.php:112
+msgid "<div class=\"entry-date-wrapper\"><div class=\"entry-date\"><p class=\"entry-day\"><a href=\"%1$s\" class=\"entry-date-link\" title=\"%2$s\" rel=\"bookmark\">%3$s</a></p><p class=\"entry-month\"><a href=\"%1$s\" class=\"entry-date-link\" title=\"%2$s\" rel=\"bookmark\">%4$s. &rsquo;%5$s</a></p></div><div class=\"entry-date-bottom\"></div><div class=\"entry-date-shadow\"></div></div>"
+msgstr "<div class=\"entry-date-wrapper\"><div class=\"entry-date\"><p class=\"entry-day\"><a href=\"%1$s\" class=\"entry-date-link\" title=\"%2$s\" rel=\"bookmark\">%3$s</a></p><p class=\"entry-month\"><a href=\"%1$s\" class=\"entry-date-link\" title=\"%2$s\" rel=\"bookmark\">%4$s. &rsquo;%5$s</a></p></div><div class=\"entry-date-bottom\"></div><div class=\"entry-date-shadow\"></div></div>"
+
+#: functions.php:127
+msgid "<span class=\"by-author\"> <span class=\"sep\"> Posted by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%3$s\" title=\"%4$s\" rel=\"author\">%5$s</a></span></span>. <span class=\"posted-in\">Categories: %1$s. Tags: %2$s. </span>"
+msgstr ""
+
+#: functions.php:129
+msgid "<span class=\"by-author\"> <span class=\"sep\"> Posted by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%3$s\" title=\"%4$s\" rel=\"author\">%5$s</a></span></span>. <span class=\"posted-in\">Categories: %1$s.</span>"
+msgstr ""
+
+#: functions.php:87
+msgid "Default sidebar"
+msgstr "Mövcud yan menyu şubuğu"
+
+#: functions.php:89
+msgid "The primary widget area."
+msgstr "Birinci vidcet sahəsi."
+
+#: functions.php:31
+msgid "Primary Menu"
+msgstr "Əsas menyu"
+
+#: footer.php:19
+msgid "Theme: %1$s by %2$s."
+msgstr "Mövzu: %1$s tərəfindən %2$s."
+
+#: footer.php:17
+msgid "Proudly powered by %s"
+msgstr "%s qürurla təqdim edər"
+
+#: footer.php:17
+msgid "A Semantic Personal Publishing Platform"
+msgstr "Müasir Fərdi Yayın Platforması"
+
+#: content.php:53 functions.php:137
+msgid "View all posts by %s"
+msgstr "%s tərəfindən yazılmış bütün yazılara bax"
+
+#: content.php:48
+msgid "About %s"
+msgstr "%s haqqında"
+
+#: content-gallery.php:55
+msgid "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photo</a>."
+msgid_plural "This gallery contains <a href=\"%1$s\" rel=\"bookmark\">%2$s photos</a>."
+msgstr[0] "Bu qalereyada  <a href=\"%1$s\" rel=\"bookmark\">%2$s foto</a> vardır."
+msgstr[1] "Bu qalereyada  <a href=\"%1$s\" rel=\"bookmark\">%2$s foto</a> vardır."
+
+#: content-link.php:23
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: content-aside.php:25 content-audio.php:23 content-chat.php:35
+#: content-gallery.php:68 content-image.php:20 content-link.php:52
+#: content-quote.php:23 content.php:37 functions.php:170 functions.php:198
+#: image.php:83 page.php:26
+msgid "Edit"
+msgstr "Redaktə et"
+
+#: content-aside.php:24 content-audio.php:22 content-chat.php:34
+#: content-gallery.php:67 content-image.php:19 content-link.php:51
+#: content-quote.php:22 content.php:36 image.php:82
+msgid "% Comments"
+msgstr "% Şərh"
+
+#: content-aside.php:24 content-audio.php:22 content-chat.php:34
+#: content-gallery.php:67 content-image.php:19 content-link.php:51
+#: content-quote.php:22 content.php:36 image.php:82
+msgid "1 Comment"
+msgstr "1 Şərh"
+
+#: content-aside.php:17 content-audio.php:17 content-chat.php:28
+#: content-gallery.php:62 content-image.php:14 content-link.php:45
+#: content-quote.php:16 content.php:30 image.php:71 page.php:21
+msgid "Pages:"
+msgstr "Səhifələr:"
+
+#: content-aside.php:16 content-audio.php:16 content-chat.php:26
+#: content-gallery.php:25 content-image.php:13 content-link.php:44
+#: content-quote.php:15 content.php:27 page.php:20
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Oxumağa davam et <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:52
+msgid "Comments are closed."
+msgstr "Şərh üçün bağlıdır."
+
+#: comments.php:30 comments.php:42
+msgid "Newer Comments &rarr;"
+msgstr "Yeni şərhlər &rarr;"
+
+#: comments.php:29 comments.php:41
+msgid "&larr; Older Comments"
+msgstr "&larr; Əski şərhlər"
+
+#: comments.php:28 comments.php:40
+msgid "Comment navigation"
+msgstr "Şərh naviqasiyası"
+
+#: comments.php:22
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: comments.php:22 content-aside.php:24 content-audio.php:22
+#: content-chat.php:34 content-gallery.php:67 content-image.php:19
+#: content-link.php:51 content-quote.php:22 content.php:36 image.php:82
+msgid "Leave a comment"
+msgstr "Bir şərh yazın"
+
+#: comments.php:20
+msgid "One response"
+msgid_plural "%1$s responses"
+msgstr[0] "Bir cavab"
+msgstr[1] "%1$s cavab"
+
+#: archive.php:26 sidebar.php:15
+msgid "Archives"
+msgstr "Arxivlər"
+
+#: archive.php:24
+msgid "Tag Archives: %s"
+msgstr "%s Etiket Arxivləri: "
+
+#: archive.php:22
+msgid "Author Archives: %s"
+msgstr "Müəllifin arxivləri: %s"
+
+#: archive.php:20
+msgid "Category Archives: %s"
+msgstr "Kateqoriya Arxivləri: %s"
+
+#: archive.php:18
+msgid "Yearly Archives: %s"
+msgstr "İllik Arxivlər: %s"
+
+#: archive.php:16
+msgid "Monthly Archives: %s"
+msgstr "Aylıq Arxivlər: %s"
+
+#: archive.php:14
+msgid "Daily Archives: %s"
+msgstr "Günlük Arxivlər: %s"
+
+#: 404.php:16
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Axtardığınız səhifə tapılmadı. Bəlkə axtarış qutusu axtardığınızı tapmaqda sizə kömək edər."
+
+#: 404.php:12
+msgid "Not found"
+msgstr "Tapılmadı"
