@@ -1,0 +1,348 @@
+# Translation of Dusk To Dawn in French (France)
+# This file is distributed under the same license as the Dusk To Dawn package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-06-01 15:02:47+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1000\n"
+"Project-Id-Version: Dusk To Dawn\n"
+
+#. Author URI of the plugin/theme
+#: wp-content/themes/pub/dusk-to-dawn/style.css
+msgid "https://wordpress.com/themes/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+#: wp-content/themes/pub/dusk-to-dawn/full-width-page.php
+msgid "Full-width, no sidebar"
+msgstr "Pleine-Largeur, Sans Sidebar"
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/dusk-to-dawn/style.css
+msgid "A dark theme that melds old-style organic ornaments with modern design and typography. It features a custom header, custom background, and a widget area in the sidebar. It comes with support for several post formats including aside, gallery, image, quote, link, chat, and audio."
+msgstr ""
+
+#: sidebar.php:29
+msgid "Meta"
+msgstr "Méta"
+
+#: index.php:14
+msgid "Search Results for: %s"
+msgstr "Résultats de recherche pour : %s"
+
+#: inc/theme-options.php:191
+msgid "Save Options"
+msgstr "Enregistrer les Options"
+
+#: inc/theme-options.php:167 inc/theme-options.php:169
+msgid "Layout"
+msgstr "Mise en page"
+
+#: inc/theme-options.php:163
+msgid "Default color: %s"
+msgstr "Couleur par défaut&nbsp;:"
+
+#: inc/theme-options.php:155 inc/theme-options.php:157
+msgid "Accent Color"
+msgstr "Couleur du Contraste"
+
+#: inc/theme-options.php:160
+msgid "Select a Color"
+msgstr "Choisir une couleur"
+
+#: inc/theme-options.php:115
+msgid "Content on left"
+msgstr "Contenu à gauche"
+
+#: inc/theme-options.php:145
+msgid "%s Theme Options"
+msgstr "Options du thème %s"
+
+#: inc/theme-options.php:110
+msgid "Content on right"
+msgstr "Contenu à droite"
+
+#: inc/theme-options.php:93
+msgid "<a href=\"http://wordpress.com/support/\" target=\"_blank\">Support Forums</a>"
+msgstr "<a href=\"http://wordpress.com/support/\" target=\"_blank\">Forums d&rsquo;entraide</a>"
+
+#: inc/theme-options.php:98
+msgid "Overview"
+msgstr "Vue d'ensemble"
+
+#: inc/theme-options.php:92
+msgid "<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Documentation on Theme Options</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Documentation sur les options du thème (en)</a>"
+
+#: inc/theme-options.php:91
+msgid "For more information:"
+msgstr "Pour plus d&rsquo;information&nbsp;:"
+
+#: inc/theme-options.php:85
+msgid "Some themes provide customization options that are grouped together on a Theme Options screen. If you change themes, options may change or disappear, as they are theme-specific. Your current theme, Dusk To Dawn, provides the following Theme Options:"
+msgstr "Certains thèmes disposent d'options de personnalisation rassemblées sur un écran d’options du thème. Si vous changez de thème, les options peuvent changer ou disparaître car elles dépendent de chaque thème. Votre thème actuel, Dusk To Dawn, est doté des options suivantes :"
+
+#: inc/theme-options.php:87
+msgid "<strong>Accent Color</strong>: You can choose the color used for text links and the top line on your site. You can enter the HTML color or hex code, or you can choose visually by clicking the \"Select a Color\" button to pick from a color wheel."
+msgstr "<strong>Couleur d'accentuation</strong> : vous pouvez choisir la couleur utilisée, pour le texte des liens et la ligne supérieure de votre site. Vous pouvez entrer une couleur HTML ou un code hex, ou encore choisir visuellement en cliquant sur le bouton \"Selecteur\" pour la choisir sur la roue des couleurs."
+
+#: inc/theme-options.php:88
+msgid "<strong>Layout</strong>: You can choose if you want your site&#8217;s layout to have a sidebar on the left, or the right."
+msgstr "<strong>Mise en Page</strong>: vous pouvez choisir, pour la mise en page de votre site, d'afficher la sidebar &agrave; gauche ou &agrave; droite."
+
+#: inc/theme-options.php:90
+msgid "Remember to click \"Save Changes\" to save any changes you have made to the theme options."
+msgstr "N&rsquo;oubliez pas de cliquer sur &laquo;&nbsp;Enregistrer les modifications&nbsp;&raquo; pour conserver toutes les modifications apportées aux options du thème"
+
+#: inc/theme-options.php:70 inc/theme-options.php:71
+msgid "Theme Options"
+msgstr "Options du thème"
+
+#: image.php:92
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Les commentaires et r&eacute;troliens sont ferm&eacute;s."
+
+#: image.php:90
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Les r&eacute;troliens sont ferm&eacute;s, mais vous pouvez <a class=\"comment-link\" href=\"#respond\" title=\"Poster un commentaire\">poster un commentaire</a>"
+
+#: image.php:88
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "Les commentaires sont fermés mais vous pouvez laisser une rétrolien : <a class=\"trackback-link\" href=\"%s\" title=\"Adresse de rétrolien pour votre article\" rel=\"trackback\">Adresse de rétrolien</a>."
+
+#: image.php:86
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Poster un commentaire\">Poster un commentaire</a> ou un <a class=\"trackback-link\" href=\"%s\" title=\"URL du r&eacute;trolien\" rel=\"trackback\">r&eacute;trolien</a>."
+
+#: image.php:81
+msgid "Next &rarr;"
+msgstr "Suivant &rarr;"
+
+#: image.php:17
+msgid "Published <span class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a>"
+msgstr "Publié <span class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span> à <a href=\"%3$s\" title=\"Lien image full-size\">%4$s &times; %5$s</a> dans <a href=\"%6$s\" title=\"Retour %7$s\" rel=\"gallery\">%7$s</a>"
+
+#: image.php:80
+msgid "&larr; Previous"
+msgstr "&larr; Précédent"
+
+#: functions.php:333
+msgid "Page %s"
+msgstr "Page %s"
+
+#: functions.php:266
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Voir tous les articles de %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:262
+msgid "About %s"
+msgstr "À propos de %s"
+
+#: functions.php:248
+msgid "Tagged %1$s"
+msgstr "Tagu&eacute; %1$s"
+
+#: functions.php:220
+msgid "This entry was posted in %1$s and tagged %2$s.<br />Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>.<br />"
+msgstr "Cette entrée, publiée dans %1$s, est taguée %2$s.<br />Bookmarquez ce <a href=\"%3$s\" title=\"Permalien vers %4$s\" rel=\"bookmark\">permalien</a>.<br />"
+
+#: functions.php:222
+msgid "This entry was posted in %1$s.<br />Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>.<br />"
+msgstr "Publié dans %1$s.<br /> Bookmarquez ce <a href=\"%3$s\" title=\"Permalien vers %4$s\" rel=\"bookmark\">permalien</a>.<br />"
+
+#: functions.php:239
+msgid "Posted in %1$s"
+msgstr "Posté dans %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: functions.php:212
+msgid "This entry was tagged %2$s.<br />Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>.<br />"
+msgstr "Cette entr&eacute;e est tagu&eacute;e %2$s.<br />Bookmarquer le <a href=\"%3$s\" title=\"Permalien vers %4$s\" rel=\"bookmark\">permalien</a>.<br />"
+
+#: functions.php:214
+msgid "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>.<br />"
+msgstr "Bookmarquer le <a href=\"%3$s\" title=\"Permalien vers %4$s\" rel=\"bookmark\">permalien</a>.<br />"
+
+#. translators: used between list items, there is a space after the comma
+#: functions.php:204 functions.php:236 functions.php:244
+msgid ", "
+msgstr ", "
+
+#: functions.php:148
+msgid "<a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"byline\"> <span class=\"sep\"> by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr "<a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"byline\"> <span class=\"sep\"> par </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+
+#: functions.php:154
+msgid "View all posts by %s"
+msgstr "Voir tous les articles par %s"
+
+#: functions.php:137
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Articles plus récents <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:128
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Suivant <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:133
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Articles Précédents"
+
+#: functions.php:127
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Précédent"
+
+#: functions.php:124
+msgid "Post navigation"
+msgstr "Navigation des articles"
+
+#: functions.php:52
+msgid "Sidebar Menu"
+msgstr "Menu dans la Sidebar"
+
+#: functions.php:108
+msgid "Sidebar 1"
+msgstr "Sidebar 1"
+
+#: footer.php:14
+msgid "Theme: %1$s by %2$s."
+msgstr "Thème %1$s par %2$s."
+
+#: footer.php:12
+msgid "Proudly powered by %s"
+msgstr "Fièrement propulsé par %s"
+
+#: footer.php:12
+msgid "A Semantic Personal Publishing Platform"
+msgstr "Une plate-forme sémantique de publication personnelle"
+
+#: content-gallery.php:67
+msgid "Permalink to %s"
+msgstr "Permalien vers %s"
+
+#: content-gallery.php:66
+msgid "This gallery contains <a %1$s>%2$s photo</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] "Cette galerie contient <a %1$s>%2$s photo</a>."
+msgstr[1] "Cette galerie contient <a %1$s>%2$s photos</a>."
+
+#: content-audio.php:56 content-gallery.php:84 content-link.php:45
+#: content-page.php:16 content.php:52 image.php:27 image.php:94
+msgid "Edit"
+msgstr "Modifier"
+
+#: content-audio.php:53 content-gallery.php:81 content-link.php:42
+#: content.php:49
+msgid "1 Comment"
+msgstr ""
+
+#: content-audio.php:53 content-gallery.php:81 content-link.php:42
+#: content.php:49
+msgid "% Comments"
+msgstr "% Commentaires"
+
+#: content-audio.php:53 content-gallery.php:81 content-link.php:42
+#: content.php:49
+msgid "Leave a comment"
+msgstr "Poster un commentaire"
+
+#: content-audio.php:46 content-gallery.php:73 content-link.php:35
+#: content-page.php:15 content.php:42 image.php:75
+msgid "Pages:"
+msgstr "Pages :"
+
+#: content-audio.php:45 content-gallery.php:36 content-link.php:34
+#: content.php:41
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Lire la suite <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-audio.php:41
+msgid "Download: %1$s"
+msgstr "Télécharger: %1$s"
+
+#: content-audio.php:10 content-gallery.php:10 content.php:15
+msgid "All %s posts"
+msgstr "Tous les articles de %s"
+
+#: content-audio.php:13 content-gallery.php:13 content-link.php:11
+#: content.php:19
+msgid "Featured"
+msgstr "Vedette"
+
+#: comments.php:28
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr "<span class=\"meta-nav\">&larr;</span> Commentaires Pr&eacute;c&eacute;dents"
+
+#: comments.php:38
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: comments.php:27
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Commentaires Plus Récents <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:26
+msgid "Comment navigation"
+msgstr "Navigation des commentaires"
+
+#: comments.php:15
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Une r&eacute;flexion sur &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s r&eacute;flexions sur &ldquo;%2$s&rdquo;"
+
+#: archive.php:71 index.php:34
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Contenu Introuvable. Voulez-vous lancer une recherche?"
+
+#: archive.php:67 index.php:30
+msgid "Nothing Found"
+msgstr "Aucun Résultat"
+
+#: archive.php:26
+msgid "Author Archives"
+msgstr "Archives d&rsquo;Auteur"
+
+#: archive.php:28 sidebar.php:22
+msgid "Archives"
+msgstr "Archives"
+
+#: archive.php:24
+msgid "Tag Archives: %s"
+msgstr "Archives de Tag: %s"
+
+#: archive.php:22
+msgid "Category Archives: %s"
+msgstr "Archives de Cat&eacute;gorie: %s"
+
+#: archive.php:20
+msgid "Yearly Archives: %s"
+msgstr "Archives de l'année %s"
+
+#: archive.php:18
+msgid "Monthly Archives: %s"
+msgstr "Archives Mensuelles: %s"
+
+#: archive.php:16
+msgid "Daily Archives: %s"
+msgstr "Archives du %s"
+
+#. translators: %1$s: smilie
+#: 404.php:30
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Essayez du c&ocirc;t&eacute; des archives mensuelles. %1$s"
+
+#: 404.php:11
+msgid "Well this is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Nous voil&agrave; dans une situation embarrassante&hellip;"
+
+#: 404.php:15
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr "Il semblerait que nous ne soyons pas en mesure de trouver votre contenu. Essayez en lançant une recherche, ou à l&rsquo;aide de l&rsquo;un des lien ci-dessous."
+
+#: 404.php:22
+msgid "Most Used Categories"
+msgstr "Catégories les plus utilisées"

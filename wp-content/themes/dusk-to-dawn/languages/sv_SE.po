@@ -1,0 +1,348 @@
+# Translation of Dusk To Dawn in Swedish
+# This file is distributed under the same license as the Dusk To Dawn package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-05-27 19:20:09+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1000\n"
+"Project-Id-Version: Dusk To Dawn\n"
+
+#. Author URI of the plugin/theme
+#: wp-content/themes/pub/dusk-to-dawn/style.css
+msgid "https://wordpress.com/themes/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+#: wp-content/themes/pub/dusk-to-dawn/full-width-page.php
+msgid "Full-width, no sidebar"
+msgstr "Fullbredd, utan sidopanel"
+
+#. Description of the plugin/theme
+#: wp-content/themes/pub/dusk-to-dawn/style.css
+msgid "A dark theme that melds old-style organic ornaments with modern design and typography. It features a custom header, custom background, and a widget area in the sidebar. It comes with support for several post formats including aside, gallery, image, quote, link, chat, and audio."
+msgstr ""
+
+#: sidebar.php:29
+msgid "Meta"
+msgstr "Meta"
+
+#: index.php:14
+msgid "Search Results for: %s"
+msgstr "Sökresultat för: %s"
+
+#: inc/theme-options.php:191
+msgid "Save Options"
+msgstr "Spara inställningar"
+
+#: inc/theme-options.php:167 inc/theme-options.php:169
+msgid "Layout"
+msgstr "Layout"
+
+#: inc/theme-options.php:163
+msgid "Default color: %s"
+msgstr "Standardfärg: %s"
+
+#: inc/theme-options.php:155 inc/theme-options.php:157
+msgid "Accent Color"
+msgstr "Accentfärg"
+
+#: inc/theme-options.php:160
+msgid "Select a Color"
+msgstr "Välj en färg"
+
+#: inc/theme-options.php:115
+msgid "Content on left"
+msgstr "Innehåll till vänster"
+
+#: inc/theme-options.php:145
+msgid "%s Theme Options"
+msgstr "Temainställningar för %s"
+
+#: inc/theme-options.php:110
+msgid "Content on right"
+msgstr "Innehåll till höger"
+
+#: inc/theme-options.php:93
+msgid "<a href=\"http://wordpress.com/support/\" target=\"_blank\">Support Forums</a>"
+msgstr "<a href=\"http://wordpress.com/support/\" target=\"_blank\">Supportforum</a>"
+
+#: inc/theme-options.php:98
+msgid "Overview"
+msgstr "Översikt"
+
+#: inc/theme-options.php:92
+msgid "<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Documentation on Theme Options</a>"
+msgstr "<a href=\"http://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Dokumentation för temainställningar</a>"
+
+#: inc/theme-options.php:91
+msgid "For more information:"
+msgstr "För mer information:"
+
+#: inc/theme-options.php:85
+msgid "Some themes provide customization options that are grouped together on a Theme Options screen. If you change themes, options may change or disappear, as they are theme-specific. Your current theme, Dusk To Dawn, provides the following Theme Options:"
+msgstr ""
+
+#: inc/theme-options.php:87
+msgid "<strong>Accent Color</strong>: You can choose the color used for text links and the top line on your site. You can enter the HTML color or hex code, or you can choose visually by clicking the \"Select a Color\" button to pick from a color wheel."
+msgstr ""
+
+#: inc/theme-options.php:88
+msgid "<strong>Layout</strong>: You can choose if you want your site&#8217;s layout to have a sidebar on the left, or the right."
+msgstr ""
+
+#: inc/theme-options.php:90
+msgid "Remember to click \"Save Changes\" to save any changes you have made to the theme options."
+msgstr "Kom ihåg att klicka på \"Spara ändringar\" för att spara eventuella ändringar du har gjort i inställningar för temat."
+
+#: inc/theme-options.php:70 inc/theme-options.php:71
+msgid "Theme Options"
+msgstr "Temainställningar"
+
+#: image.php:92
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Både trackbacks och kommentarer är för tillfället inaktiverade."
+
+#: image.php:90
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Trackbacks är inaktiverade, men du kan <a class=\"comment-link\" href=\"#respond\" title=\"Posta en kommentar\">posta en kommentar</a>."
+
+#: image.php:88
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "Kommetarer är inaktiverade, men du kan lämna en trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL för ditt inlägg\" rel=\"trackback\">Trackback URL</a>"
+
+#: image.php:86
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Posta en kommentar\">Posta en kommentar</a> eller lämna en trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL för ditt inlägg\" rel=\"trackback\">Trackback URL</a>."
+
+#: image.php:81
+msgid "Next &rarr;"
+msgstr "Nästa &rarr;"
+
+#: image.php:17
+msgid "Published <span class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a>"
+msgstr "Publicerat <span class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span> i storleken <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> i <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a>"
+
+#: image.php:80
+msgid "&larr; Previous"
+msgstr "&larr; Föregående"
+
+#: functions.php:333
+msgid "Page %s"
+msgstr "Sida %s"
+
+#: functions.php:266
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Visa alla inlägg av %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:262
+msgid "About %s"
+msgstr "Om %s"
+
+#: functions.php:248
+msgid "Tagged %1$s"
+msgstr "Taggad %1$s"
+
+#: functions.php:220
+msgid "This entry was posted in %1$s and tagged %2$s.<br />Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>.<br />"
+msgstr "Detta inlägg postades i %1$s och märktes %2$s.<br />Bokmärk <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalänken</a>.<br />"
+
+#: functions.php:222
+msgid "This entry was posted in %1$s.<br />Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>.<br />"
+msgstr "Detta inlägg postades i %1$s.<br />Bokmärk <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalänken</a>.<br />"
+
+#: functions.php:239
+msgid "Posted in %1$s"
+msgstr "Postat i %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: functions.php:212
+msgid "This entry was tagged %2$s.<br />Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>.<br />"
+msgstr ""
+
+#: functions.php:214
+msgid "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>.<br />"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: functions.php:204 functions.php:236 functions.php:244
+msgid ", "
+msgstr ", "
+
+#: functions.php:148
+msgid "<a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</time></a><span class=\"byline\"> <span class=\"sep\"> by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
+msgstr ""
+
+#: functions.php:154
+msgid "View all posts by %s"
+msgstr "Visa alla inlägg av %s"
+
+#: functions.php:137
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nyare inlägg <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:128
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nästa <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:133
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Äldre inlägg"
+
+#: functions.php:127
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Föregående"
+
+#: functions.php:124
+msgid "Post navigation"
+msgstr "Inläggsnavigering"
+
+#: functions.php:52
+msgid "Sidebar Menu"
+msgstr ""
+
+#: functions.php:108
+msgid "Sidebar 1"
+msgstr "Sidopanel 1"
+
+#: footer.php:14
+msgid "Theme: %1$s by %2$s."
+msgstr "Tema: %1$s av %2$s."
+
+#: footer.php:12
+msgid "Proudly powered by %s"
+msgstr "Drivs med %s"
+
+#: footer.php:12
+msgid "A Semantic Personal Publishing Platform"
+msgstr "En semantisk plattform för personlig publicering"
+
+#: content-gallery.php:67
+msgid "Permalink to %s"
+msgstr "Permalänk till %s"
+
+#: content-gallery.php:66
+msgid "This gallery contains <a %1$s>%2$s photo</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] "Detta galleri innehåller <a %1$s>%2$s bild</a>."
+msgstr[1] "Detta galleri innehåller <a %1$s>%2$s bilder</a>."
+
+#: content-audio.php:56 content-gallery.php:84 content-link.php:45
+#: content-page.php:16 content.php:52 image.php:27 image.php:94
+msgid "Edit"
+msgstr "Redigera"
+
+#: content-audio.php:53 content-gallery.php:81 content-link.php:42
+#: content.php:49
+msgid "1 Comment"
+msgstr ""
+
+#: content-audio.php:53 content-gallery.php:81 content-link.php:42
+#: content.php:49
+msgid "% Comments"
+msgstr "% kommentarer"
+
+#: content-audio.php:53 content-gallery.php:81 content-link.php:42
+#: content.php:49
+msgid "Leave a comment"
+msgstr "Lämna en kommentar"
+
+#: content-audio.php:46 content-gallery.php:73 content-link.php:35
+#: content-page.php:15 content.php:42 image.php:75
+msgid "Pages:"
+msgstr "Sidor:"
+
+#: content-audio.php:45 content-gallery.php:36 content-link.php:34
+#: content.php:41
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Läs mer <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-audio.php:41
+msgid "Download: %1$s"
+msgstr "Ladda ner: %1$s"
+
+#: content-audio.php:10 content-gallery.php:10 content.php:15
+msgid "All %s posts"
+msgstr "Alla %s inlägg"
+
+#: content-audio.php:13 content-gallery.php:13 content-link.php:11
+#: content.php:19
+msgid "Featured"
+msgstr "Utvalda"
+
+#: comments.php:28
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr "<span class=\"meta-nav\">&larr;</span> Äldre kommentarer"
+
+#: comments.php:38
+msgid "Comments are closed."
+msgstr "Kommentarer inaktiverade."
+
+#: comments.php:27
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nyare kommentarer <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:26
+msgid "Comment navigation"
+msgstr "Kommentarsnavigering"
+
+#: comments.php:15
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: archive.php:71 index.php:34
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Det verkar inte som om vi kan hitta det du letar efter. Kanske kan en sökning hjälpa."
+
+#: archive.php:67 index.php:30
+msgid "Nothing Found"
+msgstr "Inget funnet"
+
+#: archive.php:26
+msgid "Author Archives"
+msgstr "Författar Arkiv"
+
+#: archive.php:28 sidebar.php:22
+msgid "Archives"
+msgstr "Arkiv"
+
+#: archive.php:24
+msgid "Tag Archives: %s"
+msgstr "Etikettarkiv: %s"
+
+#: archive.php:22
+msgid "Category Archives: %s"
+msgstr "Kategoriarkiv: %s"
+
+#: archive.php:20
+msgid "Yearly Archives: %s"
+msgstr "Årsarkiv: %s"
+
+#: archive.php:18
+msgid "Monthly Archives: %s"
+msgstr "Månadsarkiv: %s"
+
+#: archive.php:16
+msgid "Daily Archives: %s"
+msgstr "Dagsarkiv: %s"
+
+#. translators: %1$s: smilie
+#: 404.php:30
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Prova att leta i månadsarkiven. %1$s"
+
+#: 404.php:11
+msgid "Well this is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Jaha, det här är något pinsamt, eller hur?"
+
+#: 404.php:15
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr "Det verkar som om vi inte hittar det du letar efter. Kanske en sökning eller någon av länkarna nedan kan vara till hjälp."
+
+#: 404.php:22
+msgid "Most Used Categories"
+msgstr "Mest använda kategorier"
