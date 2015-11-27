@@ -1,0 +1,24 @@
+ *** Hitchcock Changelog ***
+
+
+Version 1.03 (2015-10-05)
+------------------------- 
+- Renamed en_US.pot to hitchcock.pot
+
+
+Version 1.02 (2015-10-04)
+------------------------- 
+- Removed one instance of an incorrect text domain
+
+
+Version 1.01 (2015-10-04)
+------------------------- 
+- Updated style.css with missing tags and text domain
+- Moved comment-reply enqueueing to functions.php
+- Removed title function from header.php (title tag support in functions.php)
+- Replaced minified versions of doubletaptogo and flexslider with non-minified versions
+- Added a .pot file
+
+
+Version 1.0 (2015-08-15)
+------------------------- 
