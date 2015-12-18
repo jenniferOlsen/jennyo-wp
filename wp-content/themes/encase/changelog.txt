@@ -1,0 +1,19 @@
+
+*** Changelog ***
+
+15th June 2014 - Version 1.0
+	- Initial release
+
+19 October - Version 1.0.1
+	- Fixed the demo link
+
+10 November - Version 1.0.3
+	- Fixed the demo link
+
+2 December 2015 - Version 1.1.0
+	- Fixed the homepage header alignement
+	- Added the support for header image
+
+3 December 2015 - Version 1.2.0
+	- Fixed mobile responsive menu
+

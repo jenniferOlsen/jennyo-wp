@@ -4,7 +4,7 @@ Plugin Name: WP Gallery Custom Links
 Plugin URI: http://www.fourlightsweb.com/wordpress-plugins/wp-gallery-custom-links/
 Text Domain: wp-gallery-custom-links
 Description: Specify custom links for WordPress gallery images (instead of attachment or file only).
-Version: 1.10.5
+Version: 1.11
 Author: Four Lights Web Development
 Author URI: http://www.fourlightsweb.com
 License: GPL2
@@ -223,6 +223,7 @@ class WPGalleryCustomLinks {
 		foreach ( $attachment_ids as $attachment_id ) {
 			$link = '';
 			$target = '';
+			$rel = '';
 			$preserve_click = '';
 			$remove_link = false;
 			$additional_css_classes = '';
@@ -253,6 +254,11 @@ class WPGalleryCustomLinks {
 				// This should allow _blank by default lady to set her gallery to _self at once
 				$target = '_self';
 			}
+			// See if we have a rel for this link
+			if( isset( $attr['rel'] ) ) {
+				// Add a rel property to this image link with the specified value
+				$rel = $attr['rel']; // Note: this is escaped before being dropped in
+			}
 			// See if we have additional css classes for this attachment image
 			$attachment_meta = get_post_meta( $attachment_id, '_gallery_link_additional_css_classes', true );
 			if( $attachment_meta ) {
@@ -274,14 +280,14 @@ class WPGalleryCustomLinks {
 				$remove_link = true;
 			}
 			
-			if( $link != '' || $target != '' || $remove_link || $additional_css_classes != '' ) {
+			if( $link != '' || $target != '' || $rel != '' || $remove_link || $additional_css_classes != '' ) {
 				// Replace the attachment href
 				$needle = get_attachment_link( $attachment_id );
-				$output = self::replace_link( $needle, $link, $target, $preserve_click, $remove_link, $additional_css_classes, $output );
+				$output = self::replace_link( $needle, $link, $target, $rel, $preserve_click, $remove_link, $additional_css_classes, $output );
 
 				// Replace the file href
 				list( $needle ) = wp_get_attachment_image_src( $attachment_id, '' );
-				$output = self::replace_link( $needle, $link, $target, $preserve_click, $remove_link, $additional_css_classes, $output );
+				$output = self::replace_link( $needle, $link, $target, $rel, $preserve_click, $remove_link, $additional_css_classes, $output );
 				// Also, in case of jetpack photon with tiled galleries...
 				if( function_exists( 'jetpack_photon_url' ) ) {
 					// The CDN url currently is generated with "$subdomain = rand( 0, 2 );",
@@ -297,7 +303,7 @@ class WPGalleryCustomLinks {
 							$needle_part_1 = preg_replace( '/\d+$/U', '', $needle_parts[0] );
 							$needle_part_2 = '.wp.com' . $needle_parts[1];
 							$needle_reassembled = $needle_part_1 . $j . $needle_part_2;
-							$output = self::replace_link( $needle_reassembled, $link, $target, $preserve_click, $remove_link, $additional_css_classes, $output );
+							$output = self::replace_link( $needle_reassembled, $link, $target, $rel, $preserve_click, $remove_link, $additional_css_classes, $output );
 						}
 					}
 				}
@@ -310,7 +316,7 @@ class WPGalleryCustomLinks {
 					if( is_array( $attachment_sizes ) && count( $attachment_sizes ) > 0 ) {
 						foreach( $attachment_sizes as $attachment_size => $attachment_info ) {
 							list( $needle ) = wp_get_attachment_image_src( $attachment_id, $attachment_size );
-							$output = self::replace_link( $needle, $link, $target, $preserve_click, $remove_link, $additional_css_classes, $output );
+							$output = self::replace_link( $needle, $link, $target, $rel, $preserve_click, $remove_link, $additional_css_classes, $output );
 						} // End of foreach attachment size
 					} // End if we have attachment sizes
 				} // End if we have attachment metadata (specifically sizes)
@@ -320,7 +326,7 @@ class WPGalleryCustomLinks {
 		return $output;
 	} // End function apply_filter_post_gallery()
 	
-	private static function replace_link( $default_link, $custom_link, $target, $preserve_click, $remove_link, $additional_css_classes, $output ) {
+	private static function replace_link( $default_link, $custom_link, $target, $rel, $preserve_click, $remove_link, $additional_css_classes, $output ) {
 		// Build the regex for matching/replacing
 		$needle = preg_quote( $default_link );
 		$needle = str_replace( '/', '\/', $needle );
@@ -376,7 +382,7 @@ class WPGalleryCustomLinks {
 			// Custom Target
 			if( $target != '' && ! $remove_link ) {
 				// Replace the link target
-				$output = self::add_target( $default_link, $target, $output );
+				$output = self::add_property( $default_link, 'target', $target, $output );
 				
 				// Add a class to the link so we can manipulate it with
 				// javascript later (only if we're opening it in a new window -
@@ -384,6 +390,12 @@ class WPGalleryCustomLinks {
 				if( $target == '_blank' ) {
 					$classes_to_add .= 'set-target ';
 				}
+			}
+
+			// Custom Rel
+			if( $rel != '' && ! $remove_link ) {
+				// Replace the link rel
+				$output = self::add_property( $default_link, 'rel', $rel, $output );
 			}
 			
 			// Pre-custom link class
@@ -418,6 +430,9 @@ class WPGalleryCustomLinks {
 		// Clean up our needle for regexing
 		$needle = preg_quote( $needle );
 		$needle = str_replace( '/', '\/', $needle );
+
+		// Clean property values a bit
+		$class = esc_attr( $class );
 		
 		// Add a class to the link so we can manipulate it with
 		// javascript later
@@ -435,24 +450,28 @@ class WPGalleryCustomLinks {
 		return $output;
 	} // End function add_class()
 	
-	private static function add_target( $needle, $target, $output ) {
+	private static function add_property( $needle, $property_name, $property_value, $output ) {
 		// Clean up our needle for regexing
 		$needle = preg_quote( $needle );
 		$needle = str_replace( '/', '\/', $needle );
+
+		// Clean property values a bit
+		$property_name = esc_attr( $property_name );
+		$property_value = esc_attr( $property_value );
 		
-		// Add a target to the link (or overwrite what's there)
-		if( preg_match( '/<a[^>]*href\s*=\s*["\']' . $needle . '["\'][^>]*target\s*=\s*["\'][^"\']*["\'][^>]*>/', $output ) > 0 ) {
-			// href comes before target
-			$output = preg_replace( '/(<a[^>]*href\s*=\s*["\']' . $needle . '["\'][^>]*target\s*=\s*["\'])[^"\']*(["\'][^>]*>)/U', '$1'.$target.'$2', $output );
-		} elseif( preg_match( '/<a[^>]*target\s*=\s*["\'][^"\']*["\'][^>]*href\s*=\s*["\']' . $needle . '["\'][^>]*>/', $output ) > 0 ) {
-			// href comes after target
-			$output = preg_replace( '/(<a[^>]*target\s*=\s*["\'])[^"\']*(["\'][^>]*href\s*=\s*["\']' . $needle . '["\'][^>]*>)/U', '$1'.$target.'$2', $output );
+		// Add a property to the link (or overwrite what's there)
+		if( preg_match( '/<a[^>]*href\s*=\s*["\']' . $needle . '["\'][^>]*'.$property_name.'\s*=\s*["\'][^"\']*["\'][^>]*>/', $output ) > 0 ) {
+			// href comes before property
+			$output = preg_replace( '/(<a[^>]*href\s*=\s*["\']' . $needle . '["\'][^>]*'.$property_name.'\s*=\s*["\'])[^"\']*(["\'][^>]*>)/U', '$1'.$property_value.'$2', $output );
+		} elseif( preg_match( '/<a[^>]*'.$property_name.'\s*=\s*["\'][^"\']*["\'][^>]*href\s*=\s*["\']' . $needle . '["\'][^>]*>/', $output ) > 0 ) {
+			// href comes after property
+			$output = preg_replace( '/(<a[^>]*'.$property_name.'\s*=\s*["\'])[^"\']*(["\'][^>]*href\s*=\s*["\']' . $needle . '["\'][^>]*>)/U', '$1'.$property_value.'$2', $output );
 		} else {
-			// No previous target
-			$output = preg_replace( '/(<a[^>]*href\s*=\s*["\']' . $needle . '["\'][^>]*)(>)/U', '$1 target="'.$target.'"$2', $output );
+			// No previous property
+			$output = preg_replace( '/(<a[^>]*href\s*=\s*["\']' . $needle . '["\'][^>]*)(>)/U', '$1 '.$property_name.'="'.$property_value.'"$2', $output );
 		} // End if we have a class on the a tag or not
 		
 		return $output;
-	} // End function add_target()
+	} // End function add_property()
 	
 } // End class WPGalleryCustomLinks

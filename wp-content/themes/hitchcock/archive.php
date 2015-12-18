@@ -40,6 +40,8 @@
 				<?php get_template_part( 'content', get_post_format() ); ?>
 				
 			<?php endwhile; ?>
+            
+            <div class="clear"></div>
 							
 		</div> <!-- /posts -->
 		

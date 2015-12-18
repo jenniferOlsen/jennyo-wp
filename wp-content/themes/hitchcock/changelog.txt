@@ -1,6 +1,12 @@
  *** Hitchcock Changelog ***
 
 
+Version 1.04 (2015-12-04)
+------------------------- 
+- Added Soundcloud to the social icons
+- Fixed a floating bug with Jetpack infinite scroll on archive.php and search.php
+
+
 Version 1.03 (2015-10-05)
 ------------------------- 
 - Renamed en_US.pot to hitchcock.pot

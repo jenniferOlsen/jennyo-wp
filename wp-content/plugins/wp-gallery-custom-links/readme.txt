@@ -3,8 +3,8 @@ Contributors: fourlightsweb
 Donate link: http://www.fourlightsweb.com/wordpress-plugins/wp-gallery-custom-links/#donate
 Tags: gallery links, gallery link, gallery
 Requires at least: 3.3.1
-Tested up to: 4.3.1
-Stable tag: 1.10.5
+Tested up to: 4.4.0
+Stable tag: 1.11
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,7 @@ will be removed to allow them to function as regular links.
 * Use `[gallery open_all_in_new_window="true"]` and `[gallery open_all_in_same_window="true"]` to open all images in an entire gallery in a new window/the same window, respectively.
 * Use `[gallery preserve_click_events="true"]` to keep Lightbox or other onClick events on all custom-linked images in an entire gallery.
 * Use `[gallery remove_links="true"]` to remove links on all images in an entire gallery.
+* Use `[gallery rel="nofollow"]` to set a rel attribute with value "nofollow" on all links in an entire gallery.
 
 = Hooks =
 
@@ -146,6 +147,10 @@ accomplish this, which is outside the scope of this plugin.
 1. The additional WP Gallery Custom Link fields.
 
 == Changelog ==
+
+= 1.11 =
+* By popular demand, added the ability to set a "rel" property on all images in a gallery (e.g. nofollow)
+* Tested with WordPress 4.4
 
 = 1.10.5 =
 * Changed translation text domain from a variable to strings, because apparently a variable doesn't universally work no matter how smart it makes me feel.
@@ -262,6 +267,10 @@ directly attached to the post.
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.11 =
+* By popular demand, added the ability to set a "rel" property on all images in a gallery (e.g. nofollow)
+* Tested with WordPress 4.4
 
 = 1.10.5 =
 * Changed translation text domain from a variable to strings, because apparently a variable doesn't universally work no matter how smart it makes me feel.
