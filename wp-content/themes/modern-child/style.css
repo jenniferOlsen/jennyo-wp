@@ -17,9 +17,6 @@ body {
 .site-inner .main-navigation {
   background: #43aa8b;
 }
-.site-banner-media figure {
-  display: none;
-}
 
 .left {
   float: left;
