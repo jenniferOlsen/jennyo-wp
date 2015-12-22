@@ -1447,18 +1447,31 @@
 		if ( ! function_exists( 'wm_entry_top' ) ) {
 			function wm_entry_top() {
 				//Post meta
-					if ( in_array( get_post_type(), apply_filters( 'wmhook_wm_entry_top_meta_post_types', array( 'post', 'jetpack-portfolio' ) ) ) ) {
+					if ( in_array( get_post_type(), apply_filters( 'wmhook_wm_entry_top_meta_post_types', array( 'post' ) ) ) ) {
 
 						if ( is_single() ) {
 
 							echo wm_post_meta( apply_filters( 'wmhook_wm_entry_top_meta', array(
 									'class' => 'entry-meta entry-meta-top',
-									'meta'  => array( 'edit', 'date', 'likes', 'category', 'author' ),
+									'meta'  => array( 'edit', 'date', 'category', 'author' ),
 								) ) );
 
 						}
 
 					}
+
+					if ( in_array( get_post_type(), apply_filters( 'wmhook_wm_entry_top_meta_post_types', array( 'jetpack-portfolio' ) ) ) ) {
+
+					if ( is_single() ) {
+
+						echo wm_post_meta( apply_filters( 'wmhook_wm_entry_top_meta', array(
+								'class' => 'entry-meta entry-meta-top',
+								'meta'  => array( 'tags', 'author' ),
+							) ) );
+
+					}
+
+				}
 			}
 		} // /wm_entry_top
 
