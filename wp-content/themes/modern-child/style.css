@@ -22,3 +22,26 @@ body {
 .site-banner-media figure {
   display: none;
 }
+
+.left {
+  float: left;
+  width: 50%;
+}
+
+.right {
+  float: left;
+  width: 50%;
+}
+
+.full {
+  width: 90%;
+}
+
+@media only screen and (max-width: 680px) {
+  .left {
+    width: 90%;
+  }
+  .right {
+    width: 90%;
+  }
+}
