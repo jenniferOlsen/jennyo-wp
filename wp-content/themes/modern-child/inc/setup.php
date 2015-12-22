@@ -1809,15 +1809,7 @@
 						echo '<div class="site-info" role="contentinfo">';
 							echo apply_filters( 'wmhook_wm_credits_output',
 									'&copy; ' . date( 'Y' ) . ' <a href="' . home_url( '/' ) . '" title="' . get_bloginfo( 'name' ) . '">' . get_bloginfo( 'name' ) . '</a>. '
-									. sprintf(
-											__( 'Powered by %s.', 'wm_domain' ),
-											'<a href="https://wordpress.org">WordPress</a>'
-										)
-									. ' '
-									. sprintf(
-											__( 'Theme by %s.', 'wm_domain' ),
-											'<a href="' . esc_url( wp_get_theme()->get( 'AuthorURI' ) ) . '">WebMan Design</a>'
-										)
+
 									. ' <a href="#top" id="back-to-top" class="back-to-top">' . __( 'Back to top &uarr;', 'wm_domain' ) . '</a>'
 								);
 						echo '</div>';
