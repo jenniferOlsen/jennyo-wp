@@ -14,11 +14,9 @@
 body {
   background-color: #121f47;
 }
-
 .site-inner .main-navigation {
-  background-color: #43aa8b;
+  background: #43aa8b;
 }
-
 .site-banner-media figure {
   display: none;
 }
@@ -34,11 +32,17 @@ body {
 }
 
 .full {
-  width: 95%;
+  width: 90%;
 }
 
 .full textarea {
   width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+  .site-inner .main-navigation {
+    background: none;
+  }
 }
 
 @media only screen and (max-width: 680px) {
