@@ -10,3 +10,15 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  modern-child
 */
+
+body {
+  background-color: #121f47;
+}
+
+.site-inner .main-navigation {
+  background-color: #43aa8b;
+}
+
+.site-banner-media figure {
+  display: none;
+}
