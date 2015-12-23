@@ -2,8 +2,8 @@
 /**
  * A set of core functions.
  *
- * @package    Modern
- * @copyright  2015 WebMan - Oliver Juhas
+ * @package    Modern Child
+ * @copyright  Jenny Olsen
  *
  * @since    1.0
  * @version  1.4.5
@@ -533,6 +533,7 @@
    */
   if ( ! function_exists( 'wm_post_meta' ) ) {
     function wm_post_meta( $args = array() ) {
+
       //Helper variables
         $output = '';
 
@@ -573,21 +574,7 @@
 
           //Predefined metas
             switch ( $meta ) {
-              case 'jetpack-portfolio-type':
 
-                if (
-                    apply_filters( 'wmhook_wm_post_meta_enable_' . $meta, true, $args )
-                    //&& wm_is_categorized_blog()
-                    && ( $helper = get_the_category_list( ', ', '', $args['post_id'] ) )
-                  ) {
-                  $replacements = array(
-                      '{attributes}' => '',
-                      '{class}'      => 'cat-links entry-meta-element',
-                      '{content}'    => $helper,
-                    );
-                }
-
-              break;
               case 'author':
 
                 if ( apply_filters( 'wmhook_wm_post_meta_enable_' . $meta, true, $args ) ) {
@@ -722,6 +709,33 @@
                   $replacements = array(
                       '{attributes}' => ' title="' . __( 'Views count', 'wm_domain' ) . '"',
                       '{class}'      => 'entry-views entry-meta-element',
+                      '{content}'    => $helper,
+                    );
+                }
+
+              break;
+              case 'jetpack-portfolio-type':
+                if (
+                    apply_filters( 'wmhook_wm_post_meta_enable_' . $meta, true, $args )
+                    && ( $helper = the_terms($args['post_id'], 'jetpack-portfolio-type' ) )
+                  ) {
+                  $replacements = array(
+                      '{attributes}' => '',
+                      '{class}'      => 'cat-links entry-meta-element',
+                      '{content}'    => $helper,
+                    );
+                }
+
+              break;
+                case 'jetpack-portfolio-tag':
+
+                if (
+                    apply_filters( 'wmhook_wm_post_meta_enable_' . $meta, true, $args )
+                    && ( $helper = the_terms($args['post_id'], 'jetpack-portfolio-tag' ) )
+                  ) {
+                  $replacements = array(
+                      '{attributes}' => '',
+                      '{class}'      => 'tag-links entry-meta-element',
                       '{content}'    => $helper,
                     );
                 }

@@ -17,7 +17,10 @@ body {
 .site-inner .main-navigation {
   background: #43aa8b;
 }
-
+.single-jetpack-portfolio .entry-title {
+  border-bottom: 1px solid #D4D8DC;
+  padding-bottom: 10px;
+}
 .left {
   float: left;
   width: 50%;
