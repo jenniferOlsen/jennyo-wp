@@ -82,6 +82,9 @@ $pagination_suffix = wm_paginated_suffix( 'small', 'post' );
       wmhook_entry_top();
 
       echo '<div class="entry-content"' . wm_schema_org( 'entry_body' ) . '>';
+        if ( ! is_single() ) {
+                the_excerpt();
+        }
 
         if ( is_single() ) {
           the_content( apply_filters( 'wmhook_wm_excerpt_continue_reading', '' ) );
