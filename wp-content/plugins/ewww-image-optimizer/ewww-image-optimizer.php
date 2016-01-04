@@ -1,7 +1,7 @@
 <?php
 /**
  * Integrate image optimizers into WordPress.
- * @version 2.5.4
+ * @version 2.5.6
  * @package EWWW_Image_Optimizer
  */
 /*
@@ -10,7 +10,7 @@ Plugin URI: http://wordpress.org/extend/plugins/ewww-image-optimizer/
 Description: Reduce file sizes for images within WordPress including NextGEN Gallery and GRAND FlAGallery. Uses jpegtran, optipng/pngout, and gifsicle.
 Author: Shane Bishop
 Text Domain: ewww-image-optimizer
-Version: 2.5.4
+Version: 2.5.6
 Author URI: https://ewww.io/
 License: GPLv3
 */
@@ -19,20 +19,21 @@ License: GPLv3
 // TODO: make windows binaries so they can run from -alt or -custom
 
 // Constants
-define('EWWW_IMAGE_OPTIMIZER_DOMAIN', 'ewww-image-optimizer');
+define( 'EWWW_IMAGE_OPTIMIZER_DOMAIN', 'ewww-image-optimizer' );
 // this is the full path of the plugin file itself
-define('EWWW_IMAGE_OPTIMIZER_PLUGIN_FILE', __FILE__);
+define( 'EWWW_IMAGE_OPTIMIZER_PLUGIN_FILE', __FILE__ );
 // this is the path of the plugin file relative to the plugins/ folder
-define('EWWW_IMAGE_OPTIMIZER_PLUGIN_FILE_REL', 'ewww-image-optimizer/ewww-image-optimizer.php');
+define( 'EWWW_IMAGE_OPTIMIZER_PLUGIN_FILE_REL', 'ewww-image-optimizer/ewww-image-optimizer.php' );
 // the folder where we install optimization tools
-define('EWWW_IMAGE_OPTIMIZER_TOOL_PATH', WP_CONTENT_DIR . '/ewww/');
+define( 'EWWW_IMAGE_OPTIMIZER_TOOL_PATH', WP_CONTENT_DIR . '/ewww/' );
 // this is the full system path to the plugin folder
-define('EWWW_IMAGE_OPTIMIZER_PLUGIN_PATH', plugin_dir_path(__FILE__));
+define( 'EWWW_IMAGE_OPTIMIZER_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 
-require_once(EWWW_IMAGE_OPTIMIZER_PLUGIN_PATH . 'common.php');
+// this is the only time we do not use our ewww_image_optimizer_require/include wrapper, because it has not been defined yet
+require( EWWW_IMAGE_OPTIMIZER_PLUGIN_PATH . 'common.php' );
 
 // Hooks
-add_action('admin_action_ewww_image_optimizer_install_pngout', 'ewww_image_optimizer_install_pngout');
+add_action( 'admin_action_ewww_image_optimizer_install_pngout', 'ewww_image_optimizer_install_pngout' );
 
 // check to see if the cloud constant is defined (which would mean we've already run init) and then set it properly if not
 function ewww_image_optimizer_cloud_init() {
@@ -50,7 +51,7 @@ function ewww_image_optimizer_exec_init() {
 	ewwwio_debug_message( '<b>' . __FUNCTION__ . '()</b>' );
 	if ( ! function_exists( 'is_plugin_active_for_network' ) && is_multisite() ) {
 		// need to include the plugin library for the is_plugin_active function
-		require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+		ewww_image_optimizer_require( ABSPATH . 'wp-admin/includes/plugin.php' );
 	}
 	if ( is_multisite() && is_plugin_active_for_network( EWWW_IMAGE_OPTIMIZER_PLUGIN_FILE_REL ) ) {
 		// set the binary-specific network settings if they have been POSTed
@@ -430,7 +431,7 @@ function ewww_image_optimizer_install_tools () {
 	if ( $toolfail ) {
 		if ( ! function_exists( 'is_plugin_active_for_network' ) && is_multisite() ) {
 			// need to include the plugin library for the is_plugin_active function
-			require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+			ewww_image_optimizer_require( ABSPATH . 'wp-admin/includes/plugin.php' );
 		}
 		if ( is_multisite() && is_plugin_active_for_network( EWWW_IMAGE_OPTIMIZER_PLUGIN_FILE_REL ) ) {
 			$settings_page = 'settings.php?page=' . EWWW_IMAGE_OPTIMIZER_PLUGIN_FILE_REL;
@@ -574,7 +575,7 @@ function ewww_image_optimizer_notice_utils() {
 	if( ! empty( $msg ) ){
 		if ( ! function_exists( 'is_plugin_active_for_network' ) && is_multisite() ) {
 			// need to include the plugin library for the is_plugin_active function
-			require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+			ewww_image_optimizer_require( ABSPATH . 'wp-admin/includes/plugin.php' );
 		}
 		if ( is_multisite() && is_plugin_active_for_network( EWWW_IMAGE_OPTIMIZER_PLUGIN_FILE_REL ) ) {
 			$settings_page = 'settings.php?page=' . EWWW_IMAGE_OPTIMIZER_PLUGIN_FILE_REL;
@@ -1703,10 +1704,10 @@ function ewww_image_optimizer($file, $gallery_type = 4, $converted = false, $new
 					ewwwio_debug_message( 'attempting lossy reduction' );
 					exec( "$nice " . $tools['PNGQUANT'] . " " . ewww_image_optimizer_escapeshellarg( $file ) );
 					$quantfile = preg_replace( '/\.\w+$/', '-fs8.png', $file );
-					if ( file_exists( $quantfile ) && filesize( $file ) > filesize( $quantfile ) && ewww_image_optimizer_mimetype($quantfile, 'i') == $type ) {
+					if ( is_file( $quantfile ) && filesize( $file ) > filesize( $quantfile ) && ewww_image_optimizer_mimetype($quantfile, 'i') == $type ) {
 						ewwwio_debug_message( "lossy reduction is better: original - " . filesize( $file ) . " vs. lossy - " . filesize( $quantfile ) );
 						rename( $quantfile, $file );
-					} elseif ( file_exists( $quantfile ) ) {
+					} elseif ( is_file( $quantfile ) ) {
 						ewwwio_debug_message( "lossy reduction is worse: original - " . filesize( $file ) . " vs. lossy - " . filesize( $quantfile ) );
 						unlink( $quantfile );
 					} else {

@@ -3,8 +3,8 @@ Contributors: nosilver4u
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MKMQKCBFFG3WW
 Tags: image, attachment, optimize, optimization, lossless, lossy, photo, picture, seo, compression, gmagick, jpegtran, gifsicle, optipng, pngout, pngquant, jpegmini, tinyjpg, tinypng, webp, wp-cli 
 Requires at least: 3.5
-Tested up to: 4.3.1
-Stable tag: 2.5.4
+Tested up to: 4.4
+Stable tag: 2.5.6
 License: GPLv3
 
 Reduce file sizes for images in WordPress including NextGEN, GRAND FlAGallery and more using lossless/lossy methods and image format conversion.
@@ -86,11 +86,6 @@ Swedish translation by Alexander Widén
 Turkish translation by sfatih  
 Ukrainian translation by Roman Sobol
 
-In progress translations:  
-Vietnamese  
-Indonesian  
-Hebrew  
-
 If you would like to help translate this plugin (new or existing translations), you can do so here: https://translate.wordpress.org/projects/wp-plugins/ewww-image-optimizer
 To receive updates when new strings are available for translation, you can signup here: https://ewww.io/register/
 
@@ -164,6 +159,10 @@ Webhosts where the plugin will only work in cloud mode or only some tools are in
 
 Try this for starters: http://ewww.io/2014/12/05/pagespeed-says-my-images-need-more-work/
 
+= The plugin complains that I'm missing something, what do I do?
+
+This article will walk you through installing the required tools (and the alternatives if installation does not work): https://ewww.io/2014/12/06/the-plugin-says-im-missing-something/
+
 = Does the plugin replace existing images? =
 
 Yes, but only if the optimized version is smaller. The plugin should NEVER create a larger image.
@@ -215,6 +214,18 @@ Pngout, TinyJPG/TinyPNG, JPEGmini, and Pngquant were recommended by EWWW IO user
 
 * feature requests are sticky at the top of the support forums, vote for the ones you like: https://wordpress.org/support/plugin/ewww-image-optimizer
 * If you would like to help translate this plugin in your language, get started here: https://translate.wordpress.org/projects/wp-plugins/ewww-image-optimizer/
+
+= 2.5.6 =
+* fixed: avoid memory leaks from calls to ewwwio_debug_message() within ewww_image_optimizer_require() for multi-site users
+
+= 2.5.5 =
+* fixed: prevent duplicate scheduled optimizations from running concurrently
+* fixed: removed redundant checks from scheduled optimization
+* changed: files without extensions are skipped by the folder scanning function
+* changed: hidden files are skipped by the folder scanning function (can be modified with a filter)
+* changed: new installs will have the collation set properly for the ewwwio_images table
+* changed: make require() and include() less fatal and use admin notices instead
+* fixed: warnings when deferred optimization queue is empty
 
 = 2.5.4 =
 * changed: Remove metadata turned on by default, should not affect existing installations/upgrades
